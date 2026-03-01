@@ -8,11 +8,6 @@
       "fileLocks": [
         {
           "assetId": "5RFQEMyNFhqH4SLzFAASMM",
-          "type": "projectCss",
-          "checksum": "1a18fb4af02093fa7749047d3ce270ff"
-        },
-        {
-          "assetId": "5RFQEMyNFhqH4SLzFAASMM",
           "checksum": "4bdf392a2401e8eb68fa0b80eb93cc2a",
           "type": "projectModule"
         },
@@ -150,6 +145,11 @@
           "type": "image",
           "assetId": "FWAquS9MYkDo",
           "checksum": "5dfe7cf31bfa8e97f2ff6b06e21e0c4b"
+        },
+        {
+          "assetId": "5RFQEMyNFhqH4SLzFAASMM",
+          "type": "projectCss",
+          "checksum": "1a18fb4af02093fa7749047d3ce270ff"
         }
       ],
       "codegenVersion": "0.0.3"
