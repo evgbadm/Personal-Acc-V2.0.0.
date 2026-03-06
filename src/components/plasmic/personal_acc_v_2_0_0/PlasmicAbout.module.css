@@ -1,0 +1,241 @@
+.about {
+  background: rgba(41, 41, 41, 0.07999999821186066);
+  box-shadow: inset 0px 0px 0px 1px rgba(41, 41, 41, 0.07999999821186066);
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  max-width: 1366px;
+  justify-self: flex-start;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  border-radius: 100px;
+}
+.number {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.button2 {
+  background: rgba(41, 41, 41, 0.009999999776482582);
+  box-shadow: inset 0px 0px 0px 1px rgba(41, 41, 41, 0.30000001192092896);
+  backdrop-filter: blur(10px);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 44px;
+  padding: 12px;
+}
+.freeBox {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.closeMd {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+}
+.svg___3H112 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.buttonText2 {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  color: rgba(41, 41, 41, 1);
+  position: relative;
+}
+.btnGroup {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.button3 {
+  background: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  padding: 12px 20px;
+}
+.usersGroup {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg___33Pps {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  width: 18px;
+  height: 1em;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+.buttonText3 {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(41, 41, 41, 1);
+  position: relative;
+}
+.calendar2 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg__mWg27 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  width: 16px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+.button4 {
+  background: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  padding: 12px 20px;
+}
+.uDoc {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg__j3FQl {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  transform: translate(0.1399998664855957px, 0.15000009536743164px);
+  width: 15.690000534057617px;
+  height: 19.71000099182129px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+.svg__pd08C {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  transform: translate(0.23999977111816406px, -0.48999977111816406px);
+  width: 8px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 70.83%;
+  left: 33.33%;
+}
+.svg___6Xyuu {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  transform: translate(0.23999977111816406px, -0.48999977111816406px);
+  width: 8px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 58.33%;
+  left: 33.33%;
+}
+.buttonText4 {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(41, 41, 41, 1);
+  position: relative;
+}
+.calendar3 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg__eQrx {
+  object-fit: cover;
+  max-width: 100%;
+  color: #292929;
+  width: 16px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}

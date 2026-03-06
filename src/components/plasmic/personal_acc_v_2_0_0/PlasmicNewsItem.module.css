@@ -1,0 +1,170 @@
+.newItem {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 560px;
+  border-radius: 36px;
+  padding: 20px 8px 8px 24px;
+}
+.title {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 16px;
+}
+.slotTargetChildren {
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--token-aasAVZ1Sgpiq);
+  color: rgba(41, 41, 41, 1);
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.detail {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 100%;
+  min-width: 0;
+}
+.textactive {
+  padding-right: 16px;
+}
+.freeBox {
+  display: flex;
+  align-self: stretch;
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  flex-direction: row;
+}
+.slotTargetSlot {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(41, 41, 41, 1);
+  line-height: 22px;
+  letter-spacing: 0em;
+  white-space: pre;
+  user-select: text;
+}
+.slotTargetSlot > :global(.__wab_text),
+.slotTargetSlot > :global(.__wab_expr_html_text),
+.slotTargetSlot > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_text),
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_expr_html_text),
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_expr_html_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_expr_html_text),
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot-string-wrapper) {
+  text-overflow: ellipsis;
+}
+.slotTargetSlot > *,
+.slotTargetSlot > :global(.__wab_slot) > *,
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_slot) > *,
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > *,
+.slotTargetSlot > picture > img,
+.slotTargetSlot > :global(.__wab_slot) > picture > img,
+.slotTargetSlot > :global(.__wab_slot) > :global(.__wab_slot) > picture > img,
+.slotTargetSlot
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  overflow: hidden;
+}
+.slotTargetSlotactive {
+  white-space: pre-wrap;
+}
+.button {
+  background: #2929290a;
+  box-shadow: inset 0px 0px 0px 1px rgba(41, 41, 41, 0.03999999910593033);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+  transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  border-radius: 90px;
+  padding: 18px 32px;
+}
+.buttonactive {
+  display: none;
+}
+.newItem:hover .button {
+  background: var(--token-H93KRBoHhWQH);
+}
+.text__saDv1 {
+  display: block;
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  color: rgba(41, 41, 41, 1);
+  position: relative;
+}

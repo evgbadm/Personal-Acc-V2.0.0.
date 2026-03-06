@@ -1,0 +1,158 @@
+.property1Default {
+  background: rgba(255, 255, 255, 1);
+  width: 466px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border-radius: 36px;
+  padding: 20px 24px;
+}
+.property1Defaultactive {
+  box-shadow: 0px 14px 34px 0px #00000026;
+  background: #ffffffcc;
+}
+.property1Default:hover {
+  box-shadow: 0px 4px 16px 0px #0000000d;
+  background: #ffffffcc;
+}
+.dataContent {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  row-gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title {
+  display: flex;
+  align-self: stretch;
+  position: relative;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+  line-height: var(--token-nvNpkul_E9Vf);
+  color: var(--token-84aGR1ANuqKX);
+  font-weight: 600;
+  font-size: var(--token-aasAVZ1Sgpiq);
+  white-space: pre-wrap;
+  text-align: left;
+}
+.subtitle {
+  display: flex;
+  align-self: stretch;
+  position: relative;
+  flex-direction: row;
+}
+.slotTargetSlot {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--token-jdkSrDFJPxyB);
+  font-weight: 400;
+  color: var(--token-84aGR1ANuqKX);
+  line-height: var(--token-u4t7uo2W7A-4);
+  letter-spacing: 0em;
+}
+.chevronRight {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg__xi1R {
+  object-fit: cover;
+  max-width: 100%;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  height: 1em;
+}
+.svgactive__xi1RHg4Z {
+  display: none;
+}
+.svg__jYn3Q {
+  object-fit: cover;
+  max-width: 100%;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  height: 1em;
+  display: none;
+}
+.svgactive__jYn3Qhg4Z {
+  top: 4px;
+  display: block;
+}
+.property1Hover {
+  animation: none;
+  background: rgba(255, 255, 255, 0.800000011920929);
+  filter: drop-shadow(0px 14px 12px rgba(0, 0, 0, 0.05000000074505806));
+  width: 466px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 128px;
+  left: -2px;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  border-radius: 36px;
+  padding: 20px 24px;
+}
+.property1Default:hover .property1Hover {
+  display: none;
+}
+.dataContent2 {
+  animation: none;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  row-gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title2 {
+  animation: none;
+  display: block;
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 25px;
+  color: rgba(41, 41, 41, 1);
+  align-self: stretch;
+  position: relative;
+}
+.text {
+  animation: none;
+  display: block;
+  font-size: 13px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 17px;
+  color: rgba(41, 41, 41, 1);
+  align-self: stretch;
+  position: relative;
+}
+.chevronRight2 {
+  animation: none;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
