@@ -1,6 +1,36 @@
 {
   "props": [
     {
+      "name": "Basic/Border",
+      "type": "color",
+      "value": "#D1D5DB",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "NjJyU4oDY9g-"
+      }
+    },
+    {
+      "name": "Basic/Text-Primary",
+      "type": "color",
+      "value": "#030712",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "0SRRsVab79aj"
+      }
+    },
+    {
+      "name": "Basic/Text-Secondary",
+      "type": "color",
+      "value": "#6B7280",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "jHE2g5Fi0KbU"
+      }
+    },
+    {
       "name": "Black Transparent/100%",
       "type": "color",
       "value": "#000000",
@@ -28,6 +58,26 @@
       "meta": {
         "projectId": "5RFQEMyNFhqH4SLzFAASMM",
         "id": "H93KRBoHhWQH"
+      }
+    },
+    {
+      "name": "Brand/Brand",
+      "type": "color",
+      "value": "#2563EB",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "UE00Un0Vt5QQ"
+      }
+    },
+    {
+      "name": "Destructive/Destructive",
+      "type": "color",
+      "value": "#DC2626",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "TH-lnWiEHj8a"
       }
     },
     {
@@ -71,6 +121,36 @@
       }
     },
     {
+      "name": "Font-LG",
+      "type": "fontsize",
+      "value": "1.25rem",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "mijS62VCIXt7"
+      }
+    },
+    {
+      "name": "Font-MD",
+      "type": "fontsize",
+      "value": "1rem",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "8jWlr3Q9HMgt"
+      }
+    },
+    {
+      "name": "Font-SM",
+      "type": "fontsize",
+      "value": "0.75rem",
+      "category": "fontsize",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "eDz7VdxJwAFy"
+      }
+    },
+    {
       "name": "LH 17",
       "type": "lineheight",
       "value": "17px",
@@ -101,6 +181,56 @@
       }
     },
     {
+      "name": "Line-height-LG",
+      "type": "lineheight",
+      "value": "1.4",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "QRSAdaQcQqdU"
+      }
+    },
+    {
+      "name": "Line-height-MD",
+      "type": "lineheight",
+      "value": "1.25",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "99HmP01jVp76"
+      }
+    },
+    {
+      "name": "Line-height-SM",
+      "type": "lineheight",
+      "value": "1",
+      "category": "lineheight",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "cUaHBGIDZPCM"
+      }
+    },
+    {
+      "name": "Muted/Muted-Soft",
+      "type": "color",
+      "value": "#F3F4F6",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "soRrKUD8fB0E"
+      }
+    },
+    {
+      "name": "Muted/Muted-Soft-Hover",
+      "type": "color",
+      "value": "#E5E7EB",
+      "category": "color",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "IOVrY3SM-8ZP"
+      }
+    },
+    {
       "name": "Primary/100%",
       "type": "color",
       "value": "#DFFF2F",
@@ -118,6 +248,66 @@
       "meta": {
         "projectId": "5RFQEMyNFhqH4SLzFAASMM",
         "id": "-ne4YhOuW9by"
+      }
+    },
+    {
+      "name": "Sans-serif",
+      "type": "fontfamily",
+      "value": "Inter",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "RbRDaSIm5DB4"
+      }
+    },
+    {
+      "name": "Size-10",
+      "type": "spacing",
+      "value": "0.625rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "_wXpW_iuJsy1"
+      }
+    },
+    {
+      "name": "Size-2",
+      "type": "spacing",
+      "value": "0.125rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "RAJ0XZyp22gA"
+      }
+    },
+    {
+      "name": "Size-32",
+      "type": "spacing",
+      "value": "2rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "qeJMyutzp5r0"
+      }
+    },
+    {
+      "name": "Size-4",
+      "type": "spacing",
+      "value": "0.25rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "A0kE8XnBGicK"
+      }
+    },
+    {
+      "name": "Size-6",
+      "type": "spacing",
+      "value": "0.375rem",
+      "category": "spacing",
+      "meta": {
+        "projectId": "5RFQEMyNFhqH4SLzFAASMM",
+        "id": "SFiY9yS-y7mS"
       }
     },
     {

@@ -48,16 +48,8 @@
   color: rgba(41, 41, 41, 1);
   position: relative;
 }
-.inputField {
-  display: block;
-  flex-grow: 1;
-  font-size: 17px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 25px;
-  color: rgba(41, 41, 41, 0.6000000238418579);
-  position: relative;
+.textInput:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
 }
 .freeBox__tTiv0 {
   display: block;
@@ -114,6 +106,7 @@
   top: 0px;
 }
 .errorMessage {
+  font-family: "Nunito Sans", sans-serif;
   position: relative;
   width: 100%;
   height: auto;

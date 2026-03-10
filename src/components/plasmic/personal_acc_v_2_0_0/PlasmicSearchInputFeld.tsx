@@ -55,6 +55,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import TextInput from "../../TextInput"; // plasmic-import: V4hyYX8r6OZY/component
 import { _useGlobalVariants } from "../blank_project/plasmic"; // plasmic-import: 5RFQEMyNFhqH4SLzFAASMM/projectModule
 import { _useStyleTokens } from "../blank_project/PlasmicStyleTokensProvider"; // plasmic-import: 5RFQEMyNFhqH4SLzFAASMM/styleTokensProvider
 
@@ -81,7 +82,7 @@ export type PlasmicSearchInputFeld__OverridesType = {
   root?: Flex__<"div">;
   searchInputFeld?: Flex__<"div">;
   text?: Flex__<"div">;
-  inputField?: Flex__<"div">;
+  textInput?: Flex__<typeof TextInput>;
   img?: Flex__<typeof PlasmicImg__>;
   searchButton?: Flex__<"div">;
   svg?: Flex__<"svg">;
@@ -122,6 +123,25 @@ function PlasmicSearchInputFeld__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -158,19 +178,30 @@ function PlasmicSearchInputFeld__RenderFunc(props: {
           >
             {"ID"}
           </div>
-          <div
-            data-plasmic-name={"inputField"}
-            data-plasmic-override={overrides.inputField}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.inputField
-            )}
-          >
-            {
+          <TextInput
+            data-plasmic-name={"textInput"}
+            data-plasmic-override={overrides.textInput}
+            className={classNames("__wab_instance", sty.textInput)}
+            onChange={async (...eventArgs: any) => {
+              generateStateOnChangeProp($state, ["textInput", "value"]).apply(
+                null,
+                eventArgs
+              );
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
+            placeholder={
               "\u041d\u043e\u043c\u0435\u0440 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0439 \u043a\u0430\u0440\u0442\u044b"
             }
-          </div>
+            value={generateStateValueProp($state, ["textInput", "value"])}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox__tTiv0)}>
             <PlasmicImg__
               data-plasmic-name={"img"}
@@ -229,7 +260,7 @@ const PlasmicDescendants = {
     "root",
     "searchInputFeld",
     "text",
-    "inputField",
+    "textInput",
     "img",
     "searchButton",
     "svg",
@@ -238,13 +269,13 @@ const PlasmicDescendants = {
   searchInputFeld: [
     "searchInputFeld",
     "text",
-    "inputField",
+    "textInput",
     "img",
     "searchButton",
     "svg"
   ],
-  text: ["text", "inputField", "img"],
-  inputField: ["inputField"],
+  text: ["text", "textInput", "img"],
+  textInput: ["textInput"],
   img: ["img"],
   searchButton: ["searchButton", "svg"],
   svg: ["svg"],
@@ -257,7 +288,7 @@ type NodeDefaultElementType = {
   root: "div";
   searchInputFeld: "div";
   text: "div";
-  inputField: "div";
+  textInput: typeof TextInput;
   img: typeof PlasmicImg__;
   searchButton: "div";
   svg: "svg";
@@ -328,7 +359,7 @@ export const PlasmicSearchInputFeld = Object.assign(
     // Helper components rendering sub-elements
     searchInputFeld: makeNodeComponent("searchInputFeld"),
     text: makeNodeComponent("text"),
-    inputField: makeNodeComponent("inputField"),
+    textInput: makeNodeComponent("textInput"),
     img: makeNodeComponent("img"),
     searchButton: makeNodeComponent("searchButton"),
     svg: makeNodeComponent("svg"),
