@@ -116,7 +116,7 @@ export const PlasmicConcilium__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicConcilium__OverridesType = {
   root?: Flex__<"div">;
-  headRightModul?: Flex__<typeof HeadRightModul>;
+  headRightModalContainer?: Flex__<typeof HeadRightModul>;
   header?: Flex__<typeof Header>;
   wraper?: Flex__<"div">;
   container2?: Flex__<"div">;
@@ -201,10 +201,12 @@ function PlasmicConcilium__RenderFunc(props: {
           )}
         >
           <HeadRightModul
-            data-plasmic-name={"headRightModul"}
-            data-plasmic-override={overrides.headRightModul}
-            className={classNames("__wab_instance", sty.headRightModul)}
-            opened={true}
+            data-plasmic-name={"headRightModalContainer"}
+            data-plasmic-override={overrides.headRightModalContainer}
+            className={classNames(
+              "__wab_instance",
+              sty.headRightModalContainer
+            )}
           />
 
           <Header
@@ -375,7 +377,7 @@ function PlasmicConcilium__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "headRightModul",
+    "headRightModalContainer",
     "header",
     "wraper",
     "container2",
@@ -386,7 +388,7 @@ const PlasmicDescendants = {
     "row",
     "row2"
   ],
-  headRightModul: ["headRightModul"],
+  headRightModalContainer: ["headRightModalContainer"],
   header: ["header"],
   wraper: ["wraper", "container2", "about"],
   container2: ["container2", "about"],
@@ -402,7 +404,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  headRightModul: typeof HeadRightModul;
+  headRightModalContainer: typeof HeadRightModul;
   header: typeof Header;
   wraper: "div";
   container2: "div";
@@ -476,7 +478,7 @@ export const PlasmicConcilium = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    headRightModul: makeNodeComponent("headRightModul"),
+    headRightModalContainer: makeNodeComponent("headRightModalContainer"),
     header: makeNodeComponent("header"),
     wraper: makeNodeComponent("wraper"),
     container2: makeNodeComponent("container2"),

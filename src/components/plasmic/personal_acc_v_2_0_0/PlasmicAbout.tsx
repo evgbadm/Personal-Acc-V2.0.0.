@@ -158,6 +158,34 @@ function PlasmicAbout__RenderFunc(props: {
           data-plasmic-name={"button2"}
           data-plasmic-override={overrides.button2}
           className={classNames(projectcss.all, sty.button2)}
+          onClick={async event => {
+            const $steps = {};
+
+            $steps["goToHome"] = true
+              ? (() => {
+                  const actionArgs = { destination: `/home` };
+                  return (({ destination }) => {
+                    if (
+                      typeof destination === "string" &&
+                      destination.startsWith("#")
+                    ) {
+                      document
+                        .getElementById(destination.substr(1))
+                        .scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      location.assign(destination);
+                    }
+                  })?.apply(null, [actionArgs]);
+                })()
+              : undefined;
+            if (
+              $steps["goToHome"] != null &&
+              typeof $steps["goToHome"] === "object" &&
+              typeof $steps["goToHome"].then === "function"
+            ) {
+              $steps["goToHome"] = await $steps["goToHome"];
+            }
+          }}
         >
           <div
             data-plasmic-name={"freeBox"}
