@@ -55,6 +55,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import HeadRightModul from "../../HeadRightModul"; // plasmic-import: p2Y85AioaQIm/component
 import { _useGlobalVariants } from "../blank_project/plasmic"; // plasmic-import: 5RFQEMyNFhqH4SLzFAASMM/projectModule
 import { _useStyleTokens } from "../blank_project/PlasmicStyleTokensProvider"; // plasmic-import: 5RFQEMyNFhqH4SLzFAASMM/styleTokensProvider
 
@@ -89,7 +90,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
   return {
     openGraph: {},
     twitter: {
-      card: "summary"
+      card: "summary" as const
     }
   };
 }
@@ -107,6 +108,7 @@ export const PlasmicDraft__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicDraft__OverridesType = {
   root?: Flex__<"div">;
+  headRightModul?: Flex__<typeof HeadRightModul>;
 };
 
 export interface DefaultDraftProps {
@@ -161,20 +163,28 @@ function PlasmicDraft__RenderFunc(props: {
             styleTokensClassNames,
             sty.root
           )}
-        />
+        >
+          <HeadRightModul
+            data-plasmic-name={"headRightModul"}
+            data-plasmic-override={overrides.headRightModul}
+            className={classNames("__wab_instance", sty.headRightModul)}
+          />
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "headRightModul"],
+  headRightModul: ["headRightModul"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  headRightModul: typeof HeadRightModul;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -239,6 +249,7 @@ export const PlasmicDraft = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    headRightModul: makeNodeComponent("headRightModul"),
 
     // Metadata about props expected for PlasmicDraft
     internalVariantProps: PlasmicDraft__VariantProps,

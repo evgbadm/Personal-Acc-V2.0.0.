@@ -157,7 +157,7 @@ function PlasmicHeader__RenderFunc(props: {
             data-plasmic-name={"frame596"}
             data-plasmic-override={overrides.frame596}
             className={classNames(projectcss.all, projectcss.a, sty.frame596)}
-            href={`/`}
+            href={`/home`}
             platform={"react"}
           >
             <div

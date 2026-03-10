@@ -679,6 +679,10 @@
   );
   --mixin-4L_a-s3eATOL_white-space: pre-wrap;
   --plasmic-mixin-semi-bold_white-space: var(--mixin-4L_a-s3eATOL_white-space);
+  --mixin-TXW-NAf1PYGh_white-space: pre-wrap;
+  --plasmic-mixin-unnamed-style-preset_white-space: var(
+    --mixin-TXW-NAf1PYGh_white-space
+  );
 }
 
 :where(.all) {

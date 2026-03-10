@@ -197,6 +197,34 @@ function PlasmicAbout__RenderFunc(props: {
           data-plasmic-name={"button3"}
           data-plasmic-override={overrides.button3}
           className={classNames(projectcss.all, sty.button3)}
+          onClick={async event => {
+            const $steps = {};
+
+            $steps["goToConcilium"] = true
+              ? (() => {
+                  const actionArgs = { destination: `/` };
+                  return (({ destination }) => {
+                    if (
+                      typeof destination === "string" &&
+                      destination.startsWith("#")
+                    ) {
+                      document
+                        .getElementById(destination.substr(1))
+                        .scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      location.assign(destination);
+                    }
+                  })?.apply(null, [actionArgs]);
+                })()
+              : undefined;
+            if (
+              $steps["goToConcilium"] != null &&
+              typeof $steps["goToConcilium"] === "object" &&
+              typeof $steps["goToConcilium"].then === "function"
+            ) {
+              $steps["goToConcilium"] = await $steps["goToConcilium"];
+            }
+          }}
         >
           <div
             data-plasmic-name={"usersGroup"}

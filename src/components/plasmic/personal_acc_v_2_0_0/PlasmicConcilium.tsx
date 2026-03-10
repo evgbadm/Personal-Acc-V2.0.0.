@@ -55,6 +55,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import HeadRightModul from "../../HeadRightModul"; // plasmic-import: p2Y85AioaQIm/component
 import Header from "../../Header"; // plasmic-import: 14gnl-eYPcLg/component
 import About from "../../About"; // plasmic-import: N9Hx1TT-AY0A/component
 import MenuItem from "../../MenuItem"; // plasmic-import: uDgGFisdmU9o/component
@@ -97,7 +98,7 @@ export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
   return {
     openGraph: {},
     twitter: {
-      card: "summary"
+      card: "summary" as const
     }
   };
 }
@@ -115,6 +116,7 @@ export const PlasmicConcilium__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicConcilium__OverridesType = {
   root?: Flex__<"div">;
+  headRightModul?: Flex__<typeof HeadRightModul>;
   header?: Flex__<typeof Header>;
   wraper?: Flex__<"div">;
   container2?: Flex__<"div">;
@@ -163,29 +165,10 @@ function PlasmicConcilium__RenderFunc(props: {
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
-        path: "activeCount",
+        path: "variable",
         type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $q, $ctx }) => 0
-      },
-      {
-        path: "showHeadRightModal",
-        type: "private",
-        variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $q, $ctx }) =>
-          (() => {
-            try {
-              return undefined;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return true;
-              }
-              throw e;
-            }
-          })()
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => ""
       }
     ],
     [$props, $ctx, $refs]
@@ -217,6 +200,13 @@ function PlasmicConcilium__RenderFunc(props: {
             sty.root
           )}
         >
+          <HeadRightModul
+            data-plasmic-name={"headRightModul"}
+            data-plasmic-override={overrides.headRightModul}
+            className={classNames("__wab_instance", sty.headRightModul)}
+            opened={true}
+          />
+
           <Header
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
@@ -320,6 +310,7 @@ function PlasmicConcilium__RenderFunc(props: {
                     "__wab_instance",
                     sty.sectionItemL__jaOdM
                   )}
+                  itemId={"Large1"}
                 />
 
                 <SectionItemL
@@ -327,6 +318,7 @@ function PlasmicConcilium__RenderFunc(props: {
                     "__wab_instance",
                     sty.sectionItemL__aUlfr
                   )}
+                  itemId={"Large2"}
                 >
                   {
                     "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0435"
@@ -343,6 +335,7 @@ function PlasmicConcilium__RenderFunc(props: {
                     "__wab_instance",
                     sty.sectionItemM__wnKqB
                   )}
+                  itemId={"Medium1"}
                 >
                   {
                     "\u0410\u043d\u0430\u0442\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0435"
@@ -353,6 +346,7 @@ function PlasmicConcilium__RenderFunc(props: {
                     "__wab_instance",
                     sty.sectionItemM__lyal1
                   )}
+                  itemId={"Medium2"}
                 >
                   {
                     "\u0424\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0435"
@@ -363,6 +357,7 @@ function PlasmicConcilium__RenderFunc(props: {
                     "__wab_instance",
                     sty.sectionItemM__x480
                   )}
+                  itemId={"Medium3"}
                 >
                   {
                     "\u042d\u043d\u0434\u043e\u0441\u043a\u043e\u043f\u0438\u0447\u0435\u0441\u043a\u0438\u0435"
@@ -380,6 +375,7 @@ function PlasmicConcilium__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "headRightModul",
     "header",
     "wraper",
     "container2",
@@ -390,6 +386,7 @@ const PlasmicDescendants = {
     "row",
     "row2"
   ],
+  headRightModul: ["headRightModul"],
   header: ["header"],
   wraper: ["wraper", "container2", "about"],
   container2: ["container2", "about"],
@@ -405,6 +402,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  headRightModul: typeof HeadRightModul;
   header: typeof Header;
   wraper: "div";
   container2: "div";
@@ -478,6 +476,7 @@ export const PlasmicConcilium = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    headRightModul: makeNodeComponent("headRightModul"),
     header: makeNodeComponent("header"),
     wraper: makeNodeComponent("wraper"),
     container2: makeNodeComponent("container2"),

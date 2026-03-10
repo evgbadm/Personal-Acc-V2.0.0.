@@ -81,12 +81,14 @@ export const PlasmicSectionItemM__VariantProps = new Array<VariantPropType>(
 );
 
 export type PlasmicSectionItemM__ArgsType = {
+  itemId?: string;
   imgSection12?: React.ReactNode;
   bellRing2?: React.ReactNode;
   children?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicSectionItemM__ArgsType;
 export const PlasmicSectionItemM__ArgProps = new Array<ArgPropType>(
+  "itemId",
   "imgSection12",
   "bellRing2",
   "children"
@@ -102,6 +104,7 @@ export type PlasmicSectionItemM__OverridesType = {
 };
 
 export interface DefaultSectionItemMProps {
+  itemId?: string;
   imgSection12?: React.ReactNode;
   bellRing2?: React.ReactNode;
   children?: React.ReactNode;
@@ -175,6 +178,7 @@ function PlasmicSectionItemM__RenderFunc(props: {
         sty.menu1,
         { [sty.menu1active]: hasVariant($state, "active", "active") }
       )}
+      data-itemid={$props.itemId}
       onClick={async event => {
         const $steps = {};
 

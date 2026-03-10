@@ -12,6 +12,8 @@
   "dependencies": {
     "@plasmicapp/cli": "^0.1.359",
     "@plasmicapp/react-web": "^0.2.423",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.269",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.224",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

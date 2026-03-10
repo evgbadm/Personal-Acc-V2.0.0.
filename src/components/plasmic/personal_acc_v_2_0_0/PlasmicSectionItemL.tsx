@@ -81,11 +81,13 @@ export const PlasmicSectionItemL__VariantProps = new Array<VariantPropType>(
 );
 
 export type PlasmicSectionItemL__ArgsType = {
+  itemId?: string;
   bellRing2?: React.ReactNode;
   children?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicSectionItemL__ArgsType;
 export const PlasmicSectionItemL__ArgProps = new Array<ArgPropType>(
+  "itemId",
   "bellRing2",
   "children"
 );
@@ -100,6 +102,7 @@ export type PlasmicSectionItemL__OverridesType = {
 };
 
 export interface DefaultSectionItemLProps {
+  itemId?: string;
   bellRing2?: React.ReactNode;
   children?: React.ReactNode;
   active?: SingleBooleanChoiceArg<"active">;
@@ -177,6 +180,7 @@ function PlasmicSectionItemL__RenderFunc(props: {
         sty.menu1,
         { [sty.menu1active]: hasVariant($state, "active", "active") }
       )}
+      data-itemid={$props.itemId}
       onClick={async event => {
         const $steps = {};
 
@@ -254,7 +258,13 @@ function PlasmicSectionItemL__RenderFunc(props: {
           defaultContents:
             "\u041a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u0438",
           value: args.children,
-          className: classNames(sty.slotTargetChildren)
+          className: classNames(sty.slotTargetChildren, {
+            [sty.slotTargetChildrenactive]: hasVariant(
+              $state,
+              "active",
+              "active"
+            )
+          })
         })}
       </div>
       <div
